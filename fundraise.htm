@@ -1,40 +1,39 @@
 <!doctype html>
 
 <html>
-  <head>
+
+<head>
+    <title>Funds for Mohammed Abdi</title>
     <meta charset="utf-8">
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-<meta http-equiv="Pragma" content="no-cache" />
-<meta http-equiv="Expires" content="0" />
-  </head>
-  <body>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="robots" content="noindex">
+
+</head>
+
+<body>
     <h1>Fundraising for our relative</h1>
+    <p>Per Elias Abdumalik, the goal is to rais USD $4,000</p>
+    <p>Plug in your zakat for the year.</p>
 
+    <iframe id="progressFrame" width="650" height="350" seamless frameborder="0" scrolling="no"></iframe>
 
-<p>This is a proof of concept for a fundraising thermometer. Inshalla Elias will provide
+    <script>
+        var loadProgressMeter = function() {
+            var ifrm = document.getElementById("progressFrame");
+            ifrm.src = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQTnoB041bORtjP2vlUNUmElx4MGVF_-mTF6giIHEiz7wKiHZUXqs4Y1IOHRsk6Fd7qo1Ql6Xz-q7Y7/pubchart?oid=1246836115&amp;format=interactive&amp;rand=" + +new Date().getTime();
 
- us with a proper target amount to raise and we can see how close we come to reaching the goal. 
+        }
+        loadProgressMeter();
+        setInterval(loadProgressMeter, 120000);
+    </script>
 
-For now, I put a target of USD $2500</p>
-
-
-<iframe id="progressFrame" width="650" height="350" seamless frameborder="0" scrolling="no" ></iframe>
-
-<script>
-
-var loadProgressMeter = function() {
-  var ifrm = document.getElementById("progressFrame");
-  ifrm.src = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQTnoB041bORtjP2vlUNUmElx4MGVF_-mTF6giIHEiz7wKiHZUXqs4Y1IOHRsk6Fd7qo1Ql6Xz-q7Y7/pubchart?oid=1246836115&amp;format=interactive&amp;rand=" + + new Date().getTime() ;
-
-}
-loadProgressMeter();
-setInterval(loadProgressMeter, 5000);
-</script>
-
-<br>
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd6U6wU0tKaPdmQT5pNmyTAwoZKcWHyrtZ0J7RmAuSgEEqx5g/viewform?embedded=true" width="640" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <br>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd6U6wU0tKaPdmQT5pNmyTAwoZKcWHyrtZ0J7RmAuSgEEqx5g/viewform?embedded=true" width="640" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 
 
-  </body>
+</body>
+
 </html>
